@@ -1,3 +1,4 @@
+import 'package:candy_app/widgets/TextFieldContainer_widget.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatelessWidget {
@@ -30,13 +31,7 @@ class LoginPage extends StatelessWidget {
                         fit: BoxFit.cover,
                       )),
                 ),
-                Container(
-                  margin: EdgeInsets.only(left: 15.0, top: 55.0, right: 15.0),
-                  padding: EdgeInsets.symmetric(horizontal: 20, vertical: 25),
-                  decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(29.0)),
-                ),
+                TextFieldContainer(),
               ],
             ),
           ),
