@@ -31,7 +31,14 @@ class LoginPage extends StatelessWidget {
                         fit: BoxFit.cover,
                       )),
                 ),
-                TextFieldContainer(),
+                TextFieldContainer(
+                  hintText: "Tu correo",
+                  onChanged: (value) {},
+                ),
+                TextFieldContainer(
+                  hintText: "Contraseña",
+                  onChanged: (value) {},
+                )
               ],
             ),
           ),
