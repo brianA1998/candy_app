@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 //Widget de inputText del login
 class TextFieldContainer extends StatelessWidget {
+  final Widget child;
   final String hintText;
   final IconData icon;
   final ValueChanged<String> onChanged;
@@ -12,19 +13,18 @@ class TextFieldContainer extends StatelessWidget {
     this.hintText,
     this.icon = Icons.person,
     this.onChanged,
+    this.child,
   }) : super(key: key);
   @override
   Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
     return Container(
-      margin: EdgeInsets.only(left: 15.0, top: 55.0, right: 15.0),
-      padding: EdgeInsets.symmetric(horizontal: 20, vertical: 11),
+      width: size.width * 0.8,
+      margin: EdgeInsets.symmetric(vertical: 10),
+      padding: EdgeInsets.symmetric(horizontal: 20, vertical: 5),
       decoration: BoxDecoration(
           color: Colors.white, borderRadius: BorderRadius.circular(29.0)),
-      child: TextField(
-        onChanged: onChanged,
-        decoration: InputDecoration(
-            hintText: hintText, icon: Icon(icon), border: InputBorder.none),
-      ),
+      child: child,
     );
   }
 }

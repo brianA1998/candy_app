@@ -1,5 +1,6 @@
 import 'package:candy_app/widgets/rounded_input_field.dart';
-import 'package:candy_app/widgets/text_field_container.dart';
+import 'package:candy_app/widgets/rounded_password_field.dart';
+import 'package:candy_app/widgets/text_field_container_widget.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatelessWidget {
@@ -33,7 +34,7 @@ class LoginPage extends StatelessWidget {
                       )),
                 ),
                 RoundedInputField(
-                  hintText: "Usuario o Correo",
+                  hintText: "Tu correo - Usuario",
                   onChanged: (value) {},
                 ),
                 RoundedPasswordField(
@@ -43,32 +44,6 @@ class LoginPage extends StatelessWidget {
             ),
           ),
         ],
-      ),
-    );
-  }
-}
-
-class RoundedPasswordField extends StatelessWidget {
-  final ValueChanged<String> onChanged;
-  const RoundedPasswordField({
-    Key key,
-    this.onChanged,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return TextFieldContainer(
-      child: TextField(
-        onChanged: onChanged,
-        obscureText: true,
-        decoration: InputDecoration(
-            hintText: "Contraseña",
-            icon: Icon(
-              Icons.lock,
-              color: Colors.black,
-            ),
-            suffix: Icon(Icons.visibility, color: Colors.black),
-            border: InputBorder.none),
       ),
     );
   }
