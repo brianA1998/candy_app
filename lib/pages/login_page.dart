@@ -1,6 +1,7 @@
+import 'package:candy_app/widgets/rounded_button.dart';
 import 'package:candy_app/widgets/rounded_input_field.dart';
 import 'package:candy_app/widgets/rounded_password_field.dart';
-import 'package:candy_app/widgets/text_field_container_widget.dart';
+
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatelessWidget {
@@ -40,11 +41,41 @@ class LoginPage extends StatelessWidget {
                 RoundedPasswordField(
                   onChanged: (value) {},
                 ),
+                RoundedButton(
+                  text: "LOGIN",
+                  press: () {},
+                ),
+                AlreadyHaveAnAccountCheck(),
               ],
             ),
           ),
         ],
       ),
+    );
+  }
+}
+
+class AlreadyHaveAnAccountCheck extends StatelessWidget {
+  final bool login;
+  final Function press;
+  const AlreadyHaveAnAccountCheck({
+    Key key,
+    this.login = true,
+    this.press,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: <Widget>[
+        Text("¿No tienes cuenta?"),
+        GestureDetector(
+          onTap: () {},
+          child:
+              Text("Registrate", style: TextStyle(fontWeight: FontWeight.bold)),
+        ),
+      ],
     );
   }
 }
