@@ -1,3 +1,4 @@
+import 'package:candy_app/widgets/already_have_an_account_check.dart';
 import 'package:candy_app/widgets/rounded_button.dart';
 import 'package:candy_app/widgets/rounded_input_field.dart';
 import 'package:candy_app/widgets/rounded_password_field.dart';
@@ -47,7 +48,7 @@ class LoginPage extends StatelessWidget {
                     text: "INICIAR SESION",
                     press: () {},
                   ),
-                  AlreadyHaveAnAccountCheck(),
+                  AlreadyHaveAnAccountCheck(press: () {}),
                 ],
               ),
             ),
