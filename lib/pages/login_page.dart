@@ -72,10 +72,11 @@ class AlreadyHaveAnAccountCheck extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
-        Text("¿No tienes cuenta?", style: TextStyle(fontSize: 18)),
+        Text(login ? "¿No tienes cuenta?" : "¿Ya tienes cuenta?",
+            style: TextStyle(fontSize: 18)),
         GestureDetector(
           onTap: () {},
-          child: Text("Registrate",
+          child: Text(login ? "Sign Up" : "Sign In",
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 19)),
         ),
       ],
