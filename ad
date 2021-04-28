@@ -1,0 +1,83 @@
+[33mcommit b0d75ca622f89ecfe0d49b386b0ddc51ecfeb93f[m[33m ([m[1;36mHEAD -> [m[1;32mlogin-app[m[33m, [m[1;31morigin/login-app[m[33m)[m
+Author: Brian <brian.alaniz@hotmail.com>
+Date:   Wed Apr 28 03:38:46 2021 -0300
+
+    Por empezar a integrar Flutter con Firebase
+
+[33mcommit 0c9f58b7a7a7bb9e0e3878dff9964d89e4e526cd[m
+Author: Brian <brian.alaniz@hotmail.com>
+Date:   Wed Apr 28 03:33:51 2021 -0300
+
+    Creando un nuevo widget
+
+[33mcommit 1ab52a0bec127924c44129e3be0f1c2fd9874ced[m
+Author: Brian <brian.alaniz@hotmail.com>
+Date:   Wed Apr 28 03:31:21 2021 -0300
+
+    Agregando operar ternario
+
+[33mcommit aee56a3e1eeb4a06246abff797ad805edcbffd37[m
+Author: Brian <brian.alaniz@hotmail.com>
+Date:   Wed Apr 28 03:26:32 2021 -0300
+
+    Agregando Widget De SingleChildScrollView para evitar el overflow
+
+[33mcommit b161973598e3ae538a7e65ab3e6a4729c4785e17[m
+Author: Brian <brian.alaniz@hotmail.com>
+Date:   Tue Apr 27 01:05:28 2021 -0300
+
+    Modificando diseño de boton login y ademas agregando espacios entre widgets
+
+[33mcommit 24db28f73680d193c247d6549856178c533d2668[m
+Author: Brian <brian.alaniz@hotmail.com>
+Date:   Tue Apr 27 00:53:34 2021 -0300
+
+    Haciendo los inputText mas abajo del icono
+
+[33mcommit c822bd659cd7fd19031f698868a34ab6d5f32684[m
+Author: Brian <brian.alaniz@hotmail.com>
+Date:   Tue Apr 27 00:43:42 2021 -0300
+
+    Iniciar sesion de login listo. Falta pulir detalles
+
+[33mcommit 945ef0afc3f9aaf71f102c30202d8a707c65c348[m
+Author: Brian <brian.alaniz@hotmail.com>
+Date:   Mon Apr 26 19:23:16 2021 -0300
+
+    Extraccion de widget de user y password
+
+[33mcommit 74a526ccd7997c2c26ecb50a68d3b07d062a04a3[m
+Author: Brian <brian.alaniz@hotmail.com>
+Date:   Mon Apr 26 18:27:34 2021 -0300
+
+    Empezando a hacer correcciones por fallas en las versiones
+
+[33mcommit 07150c0de1e12256bc8b917478b4d24b8a311234[m
+Author: Brian <brian.alaniz@hotmail.com>
+Date:   Sun Apr 25 03:54:45 2021 -0300
+
+    Empezando a desarrollar el textinput de contraseña
+
+[33mcommit ca0f66f6cec5eae352cf8cf40a27456ce145ba05[m
+Author: Brian <brian.alaniz@hotmail.com>
+Date:   Sun Apr 25 03:34:49 2021 -0300
+
+    Desarrollando los inputText del login
+
+[33mcommit 315e8d208c728dfde951be43dd30234770ac8c31[m
+Author: Brian <brian.alaniz@hotmail.com>
+Date:   Sun Apr 25 02:14:27 2021 -0300
+
+    Empezando a desarrollar los inputs del login
+
+[33mcommit 055b498b1c58e126dabfe1ac36e9fb16c39ae332[m
+Author: Brian <brian.alaniz@hotmail.com>
+Date:   Sun Apr 25 01:47:02 2021 -0300
+
+    Agregando fondo de pantalla de la app y agregando el logo de la app
+
+[33mcommit 38388752f293cfefea4fa105d00e2a54103a70de[m[33m ([m[1;31morigin/master[m[33m, [m[1;32mmaster[m[33m)[m
+Author: Brian <brian.alaniz@hotmail.com>
+Date:   Sat Apr 24 15:06:12 2021 -0300
+
+    Empezando a desarrollar el login de la app
