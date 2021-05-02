@@ -1,5 +1,6 @@
-import 'package:candy_app/pages/login_page.dart';
 import 'package:flutter/material.dart';
+
+import 'src/pages/login_page.dart';
 
 void main() => runApp(MyApp());
 
