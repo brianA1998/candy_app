@@ -23,9 +23,23 @@ class UserRepository {
     await _firebaseAuth.signInWithCredential(credential);
     return _firebaseAuth.currentUser();
   }
+
   //SignInWidthCredentials
+  Future<void> signInWithCredentials(String email, String password) {
+    return _firebaseAuth.signInWithEmailAndPassword(
+        email: email, password: password);
+  }
+
   //SignUp - Registro
+  Future<void> signUp(String email, String password) async {
+    return await _firebaseAuth.createUserWithEmailAndPassword(
+        email: email, password: password);
+  }
+
   //SignOut
+  Future<void> signOut() async {
+    return Future.wait([_firebaseAuth.signOut(), _googleSignIn.signOut()]);
+  }
   //Esta logueado?
   //Obtener usuario
 }
