@@ -38,7 +38,7 @@ class LoginPage extends StatelessWidget {
                   ),
                   SizedBox(height: 50),
                   RoundedInputField(
-                    hintText: "Tu correo - Usuario",
+                    hintText: "Tu correo ",
                     onChanged: (value) {},
                   ),
                   RoundedPasswordField(
