@@ -5,8 +5,12 @@ import 'package:candy_app/widgets/rounded_password_field.dart';
 
 import 'package:flutter/material.dart';
 
+// ignore: must_be_immutable
 class LoginPage extends StatelessWidget {
-  const LoginPage({Key key}) : super(key: key);
+  TextEditingController emailController = TextEditingController();
+  TextEditingController passwordController = TextEditingController();
+
+  LoginPage({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -38,7 +42,7 @@ class LoginPage extends StatelessWidget {
                   ),
                   SizedBox(height: 50),
                   RoundedInputField(
-                    hintText: "Tu correo ",
+                    hintText: "Email",
                     onChanged: (value) {},
                   ),
                   RoundedPasswordField(
@@ -46,7 +50,6 @@ class LoginPage extends StatelessWidget {
                   ),
                   RoundedButton(
                     text: "INICIAR SESION",
-                    press: () {},
                   ),
                   AlreadyHaveAnAccountCheck(press: () {}),
                 ],

@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
 class RoundedButton extends StatelessWidget {
   final String text;
-  final Function press;
+
   final Color color;
   final Color textColor;
   const RoundedButton({
     Key key,
     this.text,
-    this.press,
     this.color = Colors.green,
     this.textColor = Colors.white,
   }) : super(key: key);
@@ -26,7 +26,9 @@ class RoundedButton extends StatelessWidget {
               backgroundColor: Colors.green[300],
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(18.0))),
-          onPressed: press,
+          onPressed: () {
+            //FirebaseAuth.instance.signInWithEmailAndPassword(email: _emailController.text, password: password)
+          },
           child: Text(text, style: TextStyle(color: textColor, fontSize: 16)),
         ),
       ),
