@@ -1,3 +1,4 @@
+import 'package:candy_app/pages/splash_page.dart';
 import 'package:flutter/material.dart';
 
 import 'package:get/route_manager.dart';
